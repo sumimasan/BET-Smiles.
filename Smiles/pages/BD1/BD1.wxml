@@ -1,0 +1,34 @@
+<!--pages/BD1/BD1.wxml-->
+<view> 
+  <view class ="weui-article">
+      <view>
+          <view class="page_title" wx:if="{{uuid}}">分子结构式格式</view>
+          <view class="page_title" wx:else>结构式格式示例</view>
+         <image src = "{{data.image}}" mode="widthFix"></image>
+      </view>
+      <view>
+        <view class="page_title">{{data.name}}</view>
+        <!-- <image src="/images/BD1predict.png" class="first_img"></image> -->
+        <view class="weui-grids"> 
+              <!-- <view class="weui-grid" hover-class="weui-gird_active">  -->
+                <text class="smiles">{{data.predict_val}}</text>
+              <!-- </view> -->
+        </view>
+      </view>
+      <view>
+          <progress percent="{{pg}}" show-info/>
+      </view>
+      <view class="page-body-info">
+          <block wx:if="{{img_src}}">
+              <image src="{{img_src}}" class='image' mode='aspectFit'></image>
+          </block>
+          <block wx:else> 
+            <view bindtap="chooseImage" class="image-plus image-plus-nb">
+              <view class="image-plus-horizontal"></view>  
+              <view class="image-plus-vertical"></view>
+            </view>
+            <view class="image-plus-text">上传Smiles格式并预测</view>
+          </block>
+      </view>
+  </view>
+</view>

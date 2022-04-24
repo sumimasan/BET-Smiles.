@@ -1,0 +1,12 @@
+<!--pages/right/right.wxml-->
+<view class="container">
+  <!-- 容器视图-->
+    <view class="header">
+    <image src="http://127.0.0.1:8003/static/images/BRD4.png"></image>
+    </view>
+  <view class="content">
+        <view>【BRD4活性预测助手】申请获得以下权限</view>
+        <text>获取您的公开信息（昵称，头等）</text>
+  </view>
+  <button open-type="getUserInfo" lang="zh_CN" class ="btn-login" bindgetuserinfo="bindGetUserInfo" type="primary">授权登录</button>
+</view>

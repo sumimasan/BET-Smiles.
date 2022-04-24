@@ -1,0 +1,42 @@
+
+/* pages/vision/vision.wxss */
+
+.page_title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35rpx;
+  /* padding: 12rpx;  */
+}
+.first_img{
+  display: flex;
+  height: 200rpx;
+  position: fixed;
+}
+.page_content {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32rpx;
+  padding:  50rpx;
+}
+.page_img {
+  /* margin-top: 15rpx; */
+  display: flex;
+  width: 250rpx;
+  height: 180rpx;
+}
+.divLine{
+  background: white;
+  width: 80%;
+  height: 1rpx;
+  padding: 8rpx;
+} 
+.guide{
+  height: 1000rpx;
+  display: flex;
+  /* width: 650rpx; */
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  font-size: 32rpx;
+}

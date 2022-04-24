@@ -1,0 +1,44 @@
+/* pages/BD1/BD1.wxss */
+.smiles{
+  font-size: 18rpx;
+}
+.page-body-info {
+  border:1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--weui-BG-2);
+  width: 100%;
+  padding: 25px 0 75px 0;
+}
+.image-plus {
+  width: 75px;
+  height: 75px;
+  border: 1px solid var(--weui-FG-1);
+  position: relative;
+}
+.image-plus-nb{
+  border: 0;
+}
+.image-plus-text{
+  color: var(--weui-FG-2);
+  font-size: 14px;
+}
+.image-plus-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--weui-FG-1);
+  width: 2px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+}
+.image-plus-vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--weui-FG-1);
+  width: 40px;
+  height: 2px;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,17 @@
+<!--pages/vision/vision.wxml-->
+<image src ="http://127.0.0.1:8003/static/images/首页.jfif"></image>
+<!-- <view class="page_f_content">BRD4活性预测</view> -->
+  <!-- 导航目录-->
+<view class='container'>
+    <view class="page_title">BRD4活性预测</view>
+    <view class="guide">
+        <block wx:for ="{{grids.data}}" wx:for-item="val" wx:key="menuItem">
+              <navigator style="{{grids.style}};" url="{{val.url}}" class="weui-gird" hover-class="weui-gird_active">
+                <image class ="page_img" src="{{val.image}}"></image>
+                <text >{{val.name}}</text>
+              </navigator>
+        </block>
+      </view>
+  </view>
+  <!-- <text class="page_content">关于作者</text> -->
+<include src='../common/foot.wxml' />

@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/right/right",
+    "pages/BD1/BD1",
+    "pages/vision/vision",
+  
+  
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "BRD4 活性预测 ",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
